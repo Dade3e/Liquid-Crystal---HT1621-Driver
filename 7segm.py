@@ -47,6 +47,11 @@ class MainWindow(QMainWindow):
         self.pybutton7.resize(100,20)
         self.pybutton7.move(30, 140)
 
+        self.pybutton8 = QPushButton('', self)
+        self.pybutton8.clicked.connect(self.clickMethod8)
+        self.pybutton8.resize(20,20)
+        self.pybutton8.move(180, 280)
+
         self.pybuttonOK = QPushButton('OK', self)
         self.pybuttonOK.clicked.connect(self.clickMethodOK)
         self.pybuttonOK.resize(100,20)
@@ -74,6 +79,7 @@ class MainWindow(QMainWindow):
             self.pybutton1.setStyleSheet("background-color: black");
         else:
             self.pybutton1.setStyleSheet("background-color: white");
+        self.clickMethodOK()
     def clickMethod2(self):
 
         self.stato_bottoni[1] = (self.stato_bottoni[1]* -1) +1
@@ -81,6 +87,7 @@ class MainWindow(QMainWindow):
             self.pybutton2.setStyleSheet("background-color: black");
         else:
             self.pybutton2.setStyleSheet("background-color: white");
+        self.clickMethodOK()
     def clickMethod3(self):
 
         self.stato_bottoni[2] = (self.stato_bottoni[2]* -1) +1
@@ -88,6 +95,7 @@ class MainWindow(QMainWindow):
             self.pybutton3.setStyleSheet("background-color: black");
         else:
             self.pybutton3.setStyleSheet("background-color: white");
+        self.clickMethodOK()
     def clickMethod4(self):
 
         self.stato_bottoni[3] = (self.stato_bottoni[3]* -1) +1
@@ -95,6 +103,7 @@ class MainWindow(QMainWindow):
             self.pybutton4.setStyleSheet("background-color: black");
         else:
             self.pybutton4.setStyleSheet("background-color: white");
+        self.clickMethodOK()
     def clickMethod5(self):
 
         self.stato_bottoni[4] = (self.stato_bottoni[4]* -1) +1
@@ -102,6 +111,7 @@ class MainWindow(QMainWindow):
             self.pybutton5.setStyleSheet("background-color: black");
         else:
             self.pybutton5.setStyleSheet("background-color: white");
+        self.clickMethodOK()
     def clickMethod6(self):
 
         self.stato_bottoni[5] = (self.stato_bottoni[5]* -1) +1
@@ -109,6 +119,7 @@ class MainWindow(QMainWindow):
             self.pybutton6.setStyleSheet("background-color: black");
         else:
             self.pybutton6.setStyleSheet("background-color: white");
+        self.clickMethodOK()
     def clickMethod7(self):
 
         self.stato_bottoni[6] = (self.stato_bottoni[6]* -1) +1
@@ -116,6 +127,16 @@ class MainWindow(QMainWindow):
             self.pybutton7.setStyleSheet("background-color: black");
         else:
             self.pybutton7.setStyleSheet("background-color: white");
+        self.clickMethodOK()
+
+    def clickMethod8(self):
+
+        self.stato_bottoni[7] = (self.stato_bottoni[7]* -1) +1
+        if self.stato_bottoni[7]:
+            self.pybutton8.setStyleSheet("background-color: black");
+        else:
+            self.pybutton8.setStyleSheet("background-color: white");
+        self.clickMethodOK()
 
     def clickMethodOK(self):
         #print(self.stato_bottoni)
