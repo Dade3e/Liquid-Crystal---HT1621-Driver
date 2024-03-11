@@ -28,13 +28,13 @@ class MainWindow(QMainWindow):
         self.pybutton3 = QPushButton('3', self)
         self.pybutton3.clicked.connect(self.clickMethod3)
         self.pybutton3.resize(100,20)
-        self.pybutton3.move(60, 300)
+        self.pybutton3.move(60, 320)
         self.pybutton3.setStyleSheet("background-color: white");
 
         self.pybutton4 = QPushButton('4', self)
         self.pybutton4.clicked.connect(self.clickMethod4)
         self.pybutton4.resize(20,100)
-        self.pybutton4.move(170, 190)
+        self.pybutton4.move(170, 210)
         self.pybutton4.setStyleSheet("background-color: white");
 
         self.pybutton5 = QPushButton('5', self)
@@ -46,7 +46,7 @@ class MainWindow(QMainWindow):
         self.pybutton6 = QPushButton('6', self)
         self.pybutton6.clicked.connect(self.clickMethod6)
         self.pybutton6.resize(20,100)
-        self.pybutton6.move(30, 200)
+        self.pybutton6.move(30, 210)
         self.pybutton6.setStyleSheet("background-color: white");
 
         self.pybutton7 = QPushButton('7', self)
