@@ -58,7 +58,7 @@ class MainWindow(QMainWindow):
         self.pybutton8 = QPushButton('8', self)
         self.pybutton8.clicked.connect(self.clickMethod8)
         self.pybutton8.resize(20,20)
-        self.pybutton8.move(210, 300)
+        self.pybutton8.move(210, 320)
         self.pybutton8.setStyleSheet("background-color: white");
 
         self.pybuttonOK = QPushButton('OK', self)
