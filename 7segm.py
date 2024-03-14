@@ -12,6 +12,7 @@ class MainWindow(QMainWindow):
 
         self.setMinimumSize(QSize(400, 400))
         self.setWindowTitle("PyQt 7 segm test")
+        self.setStyleSheet("background-color: white");
 
         self.pybutton1 = QPushButton('1', self)
         self.pybutton1.clicked.connect(self.clickMethod1)
